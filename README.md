@@ -1,4 +1,4 @@
-Personal notes:
+## Personal notes:
 
 - it's definitely overarchitected per challenge, but wanted to show some level of abstract to detail how I like my projects to look
 - conversely, there's some duplicate code that could be cleaned up through abstract
@@ -6,7 +6,7 @@ Personal notes:
 - unfortunately, challenge didn't provide a working API so I hacked together a mock response that would simulate most of the input/output data when makinng a HTTP request
 - a lot of this code could've been condense with 3rd party libaries but as per challenge, used all native frameworks
 
-iOS Code Challenge
+## iOS Code Challenge
 
 Create a single view iOS application that has a representation of the attached CodeChallengeMockup image:
 
