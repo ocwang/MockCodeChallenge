@@ -19,6 +19,7 @@ Note: Authentication is done with a JWT authentication token. Assume you have a 
 1. On or before the view is loaded a mock network call will be made to retrieve the profile Information
     The endpoint is "https://api.foo.com/profiles/mine
     JSON return is in the following format:
+    ```
     {
         "message": "User Retrieved",
         "data":
@@ -28,11 +29,13 @@ Note: Authentication is done with a JWT authentication token. Assume you have a 
             "lastName": "Goode"
         }
     }
+    ```
 
 2. Both of the "Save Changes" buttons will make a mock network call to the following endpoints:
     Basic Information: POST "https://api.foo.com/profiles/update"
     - required parameters: firstName, lastName
     - successful return will be in the format of:
+    ```
     {
         "message": "User Retrieved",
         "data":
@@ -42,15 +45,19 @@ Note: Authentication is done with a JWT authentication token. Assume you have a 
             "lastName": "Goode"
         }
     }
+    
+    ```
 
     Password Change: POST "https://api.foo.com/password/change"
      - required parameters: current password, new password, password confirmation
      - successful return will be in the format of:
+     ```
         {
             "data": {},
             "code": "string",
             "message": "Password Changed",
             "exceptionName": null
         }
+     ```
     
 3. Error handling for the mock returns are required.
